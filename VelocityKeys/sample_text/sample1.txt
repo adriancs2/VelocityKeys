@@ -1,0 +1,113 @@
+﻿count += 1;
+arr.map(x => x * 2);
+sum += values[i];
+items.filter(n => n > 0);
+<div class="btn" onClick={() => {}}>
+<input type="text" required />
+total += price * qty;
+data.reduce((a, b) => a + b);
+list.Where(x => x != null);
+users.Select(u => u.Name);
+margin: 20px; padding: 10px;
+width: 100%; height: auto;
+vec.push_back(item);
+map[key] += value;
+count=$((count + 1));
+arr+=(element);
+score += bonus;
+list.stream().map(x -> x * 2);
+.forEach(item -> total += item);
+interface Calc { int add(int a, int b); }
+counter += step;
+vec.iter().map(|x| x * 2);
+result += process(&data);
+nums += [x**2 for x in range(5)];
+total += sum(values);
+ptr->value += delta;
+arr[i] += offset;
+UPDATE t SET val = val + 10;
+WHERE id IN (1,2,3);
+$sum += $value;
+$arr[] = $item;
+index += 2;
+const fn = (a, b) => a + b;
+result += await getData();
+items.forEach(i => sum += i);
+<span>{user?.name || 'Guest'}</span>
+<button disabled={loading}>Submit</button>
+qty += stock ?? 0;
+list?.ForEach(x => x += 1);
+flex: 1; gap: 10px;
+grid-template: "a b" / 1fr 2fr;
+nums[i] += nums[i-1];
+*ptr += 10;
+for ((i=0; i<10; i++)); do echo $i; done
+[ $x -eq 0 ] && echo "zero";
+val += arr.get(i);
+map.merge(key, 1, Integer::sum);
+let mut x = 0; x += 5;
+data.iter_mut().for_each(|x| *x += 1);
+d[key] = d.get(key, 0) + 1;
+res += [i for i in lst if i % 2 == 0];
+new int[]{1, 2, 3};
+std::vector<int> v = {1,2,3};
+SUM(CASE WHEN x > 0 THEN 1 ELSE 0 END);
+GROUP BY id HAVING COUNT(*) > 1;
+foreach($arr as $k => $v) { $sum += $v; }
+array_map(fn($x) => $x * 2, $data);
+acc += curr;
+[...arr].map(x => x + 1);
+obj?.prop ?? default;
+{id, name, ...rest} = user;
+<form onSubmit={e => e.preventDefault()}>
+<Link to="/home" className="nav">Home</Link>
+calc = (a, b) => a * b;
+prices.Sum(p => p.Amount);
+border: 1px solid #ccc;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+for(auto& x : vec) { x += 10; }
+lambda = [&](int n) { return n * n; };
+grep "error" *.log | wc -l;
+awk '{sum += $1} END {print sum}';
+Optional<T> findById(Long id);
+return stream.filter(x -> x > 5);
+Vec<i32> = vec![1, 2, 3];
+|x| x.pow(2);
+lambda x, y: x + y;
+{k: v+1 for k, v in dict.items()};
+std::accumulate(v.begin(), v.end(), 0);
+queue.push({priority, item});
+INSERT INTO t VALUES (?, ?, ?);
+SELECT * FROM t WHERE x BETWEEN 1 AND 10;
+$data['key'] += 5;
+yield $item => $value;
+progress += 0.1;
+state => ({...state, count: state.count + 1});
+promise.then(res => res.json());
+array.reduce((sum, val) => sum += val, 0);
+<div {...props} className={`btn ${active}`}>
+<MyComponent prop={() => handler()} />
+balance += transaction?.amount ?? 0;
+Record Person(string Name, int Age);
+transform: translateX(100%);
+content: ""; position: absolute;
+memcpy(dest, src, sizeof(int)*n);
+std::tie(x, y) = std::make_pair(1, 2);
+total=$(awk '{s+=$1} END {print s}' file);
+sed -i 's/old/new/g' *.txt;
+BiFunction<T, U, R> apply(T t, U u);
+list.parallelStream().forEach(x -> {});
+match x { Some(v) => v, None => 0 };
+arr.iter().fold(0, |acc, &x| acc + x);
+if x := compute(); x > 0: return x;
+@decorator def func(): pass;
+template<typename T> T max(T a, T b);
+constexpr auto lambda = [](auto x) {};
+AVG(price) OVER (PARTITION BY cat);
+ROW_NUMBER() OVER (ORDER BY date DESC);
+trait Logger { fn log(&self, msg: &str); }
+namespace App\Service { class Api {} }
+buffer += chunk;
+score += items.reduce((a, b) => a + b.points, 0);
+dispatch({type: 'INC', payload: amount});
+observer.subscribe(val => total += val);
