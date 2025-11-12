@@ -190,8 +190,6 @@ Full license text: [https://unlicense.org/](https://unlicense.org/)
 
 **AI Development Partner:** Claude (Anthropic) - Claude Opus 4.1 & Sonnet 4.5
 
-This project was built with AI collaboration, representing a transparent approach to modern software development.
-
 ## Fork & Customize
 
 You are welcome to fork this project and customize with your own needs.
