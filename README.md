@@ -13,7 +13,7 @@
 
 Perfect for developers who want to type faster and code more efficiently.
 
-## 🚀 Live Demo
+## Live Demo
 
 **Try it now:** [https://velocitykeys.com](https://velocitykeys.com)
 
