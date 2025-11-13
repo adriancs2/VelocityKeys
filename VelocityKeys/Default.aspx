@@ -40,24 +40,25 @@
     <meta name="theme-color" content="#667eea">
     <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
 
-    <link href="velocitykeys.css" type="text/css" rel="stylesheet" />
+    <link href="velocitykeys2.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
 
     <!-- Program Header -->
     <div class="program-header">
         <h1 class="program-title">Velocity Keys</h1>
-        <p class="program-subtitle">Master Code Typing. Test Your Code Typing Speed & Accuracy.</p>
+        <p class="program-subtitle">Master Code Typing. Test Your Speed & Accuracy.</p>
     </div>
 
     <div class="container">
 
         <!-- Left Panel - Controls -->
         <div class="left-panel">
+            <button class="mobile-close-btn" id="closeLeftPanel">✕</button>
             <div class="control-group">
                 <h3>Controls</h3>
                 <button class="btn" id="startBtn">Start Test</button>
-                <button class="btn restart" id="restartBtn">Reset</button>
+                <button class="btn restart" id="restartBtn">Restart</button>
             </div>
 
             <div class="control-group">
@@ -78,7 +79,7 @@
                     <!-- Custom text buttons will be added here dynamically -->
                 </div>
                 <div class="file-input-wrapper">
-                    <input type="file" id="fileInput">
+                    <input type="file" id="fileInput" accept=".txt,.js,.py,.java,.cpp,.c,.html,.css">
                     <label for="fileInput" class="file-input-label">Load Custom Text</label>
                 </div>
             </div>
@@ -86,12 +87,21 @@
             <div class="control-group">
                 <h3>History</h3>
                 <button class="btn restart" id="clearHistoryBtn">Clear History</button>
-                <button class="btn" onclick="window.location.href='/About'">About</button>
+            </div>
+
+            <div class="control-group">
+                <button class="btn" onclick="window.location.href='/About.aspx'" style="background: #27ae60;">About</button>
             </div>
         </div>
 
         <!-- Center Panel - Main Typing Area -->
         <div class="center-panel">
+            <!-- Mobile Toggle Buttons (only visible on mobile) -->
+            <div class="mobile-toggles">
+                <button class="mobile-toggle-btn" id="toggleLeftPanel">Settings</button>
+                <button class="mobile-toggle-btn" id="toggleRightPanel">History</button>
+            </div>
+
             <!-- Speedometer -->
             <div class="speedometer-container">
                 <div class="speed-display">
@@ -116,6 +126,7 @@
 
         <!-- Right Panel - History -->
         <div class="right-panel">
+            <button class="mobile-close-btn" id="closeRightPanel">✕</button>
             <div class="history-title">History</div>
             <div id="historyContainer"></div>
         </div>
@@ -141,6 +152,6 @@
         </div>
     </div>
 
-    <script src="velocitykeys.js"></script>
+    <script src="velocitykeys2.js"></script>
 </body>
 </html>

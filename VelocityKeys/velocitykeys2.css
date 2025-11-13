@@ -12,14 +12,13 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 /* Program Title Header */
 .program-header {
     padding: 10px 20px;
     margin-bottom: 10px;
-    /*animation: fadeInDown 0.8s ease;*/
     border-radius: 10px;
     background: #382F73;
     width: 100%;
@@ -27,12 +26,11 @@ body {
 }
 
 .program-title {
-    font-size: 26px;
+    font-size: 25px;
     font-weight: bold;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     letter-spacing: 2px;
-    margin-bottom: 5px;
 }
 
 .program-subtitle {
@@ -40,18 +38,6 @@ body {
     color: rgba(255, 255, 255, 0.9);
     font-weight: 300;
     letter-spacing: 1px;
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 .container {
@@ -500,3 +486,295 @@ body {
         background: #2980b9;
         transform: translateY(-2px);
     }
+
+/* ========================================
+   MOBILE RESPONSIVE STYLES
+   ======================================== */
+
+/* Mobile Toggle Buttons (hidden on desktop) */
+.mobile-toggles {
+    display: none;
+}
+
+.mobile-close-btn {
+    display: none;
+}
+
+.mobile-overlay {
+    display: none;
+}
+
+.center-panel .button-block {
+    display: none;
+}
+
+/* Mobile Styles (max-width: 768px) */
+@media (max-width: 768px) {
+    /* Show mobile toggle buttons */
+    .mobile-toggles {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        gap: 10px;
+    }
+
+    .mobile-toggle-btn {
+        flex: 1;
+        background: white;
+        color: #2c3e50;
+        border: none;
+        padding: 14px 20px;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.2s ease;
+        font-family: inherit;
+    }
+
+        .mobile-toggle-btn:active {
+            transform: scale(0.95);
+            box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+        }
+
+    /* Program header adjustments */
+    .program-header {
+        padding: 15px;
+        margin-bottom: 0;
+    }
+
+    .program-title {
+        font-size: 22px;
+    }
+
+    .program-subtitle {
+        font-size: 12px;
+    }
+
+    /* Container becomes single column */
+    .container {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    /* Center panel takes full width */
+    .center-panel {
+        width: 100%;
+        flex: 1;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        max-height: 100vh; /* Prevent overflow */
+    }
+
+    /* Speedometer adjustments */
+    .speedometer-container {
+        padding: 15px 10px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .speed-value {
+        font-size: 36px;
+    }
+
+    .timer-display {
+        font-size: 28px;
+    }
+
+    /* Code display adjustments */
+    .code-display {
+        font-size: 14px;
+        padding: 20px 15px;
+        line-height: 1.6;
+        max-height: 35vh; /* Limit height to show input below */
+        overflow-y: auto;
+    }
+
+    /* Input area adjustments */
+    .input-container {
+        padding: 15px; /* Reduced from 30px */
+    }
+
+    .typing-input {
+        font-size: 16px; /* Prevent iOS zoom */
+        padding: 12px 15px;
+        min-height: 60px; /* Reduced from 80px */
+    }
+
+    /* Hide side panels by default (slide off-screen) */
+    .left-panel,
+    .right-panel {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 1001;
+        transition: transform 0.4s ease;
+        overflow-y: auto;
+        padding-top: 60px; /* Space for close button */
+    }
+
+    .left-panel {
+        left: 0;
+        transform: translateX(-100%); /* Hidden to the left */
+        order: 1;
+    }
+
+    .right-panel {
+        right: 0;
+        transform: translateX(100%); /* Hidden to the right */
+        order: 3;
+    }
+
+    /* Show panels when active */
+    .left-panel.active {
+        transform: translateX(0); /* Slide in */
+    }
+
+    .right-panel.active {
+        transform: translateX(0); /* Slide in */
+    }
+
+    /* Close button inside panels */
+    .mobile-close-btn {
+        display: block;
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background: #e74c3c;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        z-index: 1002;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        transition: all 0.2s ease;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Left panel close button - top left */
+    .left-panel .mobile-close-btn {
+        top: 15px;
+        left: 15px;
+    }
+
+    /* Right panel close button - top right */
+    .right-panel .mobile-close-btn {
+        top: 15px;
+        right: 15px;
+    }
+
+    .mobile-close-btn:active {
+        transform: scale(0.9);
+    }
+
+    /* Overlay background when panel is open */
+    .mobile-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 1000;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s ease;
+    }
+
+        .mobile-overlay.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+    /* Left panel adjustments */
+    .left-panel {
+        padding: 70px 20px 30px 20px;
+        gap: 20px;
+    }
+
+        .left-panel .btn {
+            font-size: 16px;
+            padding: 14px 20px;
+        }
+
+        .left-panel .time-btn {
+            font-size: 15px;
+            padding: 12px;
+        }
+
+    /* Right panel adjustments */
+    .right-panel {
+        padding: 70px 20px 30px 20px;
+    }
+
+    .history-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .history-item {
+        margin-bottom: 12px;
+        padding: 12px;
+    }
+
+    /* Results modal adjustments */
+    .results-modal {
+        padding: 10px;
+    }
+
+    .results-content {
+        padding: 30px 20px;
+        max-width: 100%;
+    }
+
+    .results-title {
+        font-size: 24px;
+    }
+
+    .result-value {
+        font-size: 32px;
+    }
+
+    .center-panel .button-block {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .center-panel .buttonblock .btn {
+        display: inline-block;
+    }
+}
+
+/* Tablet/Small Desktop (768px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .left-panel {
+        width: 200px;
+        padding: 20px 15px;
+    }
+
+    .right-panel {
+        width: 250px;
+        padding: 15px;
+    }
+
+    .program-title {
+        font-size: 24px;
+    }
+
+    .speedometer-container {
+        padding: 15px;
+    }
+}

@@ -650,3 +650,72 @@ function displayHistory() {
 
 // Make closeResults available globally
 window.closeResults = closeResults;
+
+function initMobilePanels() {
+    const leftPanel = document.querySelector('.left-panel');
+    const rightPanel = document.querySelector('.right-panel');
+    const toggleLeftBtn = document.getElementById('toggleLeftPanel');
+    const toggleRightBtn = document.getElementById('toggleRightPanel');
+    const closeLeftBtn = document.getElementById('closeLeftPanel');
+    const closeRightBtn = document.getElementById('closeRightPanel');
+
+    // Create overlay if it doesn't exist
+    let overlay = document.querySelector('.mobile-overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.className = 'mobile-overlay';
+        document.body.appendChild(overlay);
+    }
+
+    // Toggle left panel
+    if (toggleLeftBtn) {
+        toggleLeftBtn.addEventListener('click', () => {
+            leftPanel?.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent background scroll
+        });
+    }
+
+    // Toggle right panel
+    if (toggleRightBtn) {
+        toggleRightBtn.addEventListener('click', () => {
+            rightPanel?.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent background scroll
+        });
+    }
+
+    // Close left panel
+    if (closeLeftBtn) {
+        closeLeftBtn.addEventListener('click', () => {
+            leftPanel?.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scroll
+        });
+    }
+
+    // Close right panel
+    if (closeRightBtn) {
+        closeRightBtn.addEventListener('click', () => {
+            rightPanel?.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scroll
+        });
+    }
+
+    // Close on overlay click
+    overlay.addEventListener('click', () => {
+        leftPanel?.classList.remove('active');
+        rightPanel?.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = ''; // Restore scroll
+    });
+}
+
+// Initialize mobile panels after DOM is loaded
+// This is called from the existing DOMContentLoaded event
+const originalDOMContentLoadedCode = document.addEventListener;
+document.addEventListener('DOMContentLoaded', () => {
+    // Initialize mobile functionality
+    initMobilePanels();
+});

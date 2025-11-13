@@ -94,8 +94,8 @@
     <Content Include="sample_text\sample1.txt" />
     <Content Include="sample_text\filenames.txt" />
     <Content Include="sample_text\sample3.txt" />
-    <Content Include="velocitykeys.css" />
-    <Content Include="velocitykeys.js" />
+    <Content Include="velocitykeys2.css" />
+    <Content Include="velocitykeys2.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

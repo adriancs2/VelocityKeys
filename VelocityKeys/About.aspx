@@ -40,7 +40,7 @@
     <meta name="theme-color" content="#667eea">
     <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
 
-    <link href="velocitykeys.css" type="text/css" rel="stylesheet" />
+    <link href="velocitykeys2.css" type="text/css" rel="stylesheet" />
     <style>
         .about-content {
             padding: 30px;
@@ -144,8 +144,8 @@
         .right-panel-content {
             padding: 0;
         }
-		
-		.social-link {
+
+        .social-link {
             display: block;
             padding: 12px 15px;
             margin-bottom: 10px;
@@ -157,20 +157,30 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        .social-link:hover {
-            transform: translateX(-5px);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            .social-link:hover {
+                transform: translateX(-5px);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            }
+
+            .social-link strong {
+                display: block;
+                color: #3498db;
+                margin-bottom: 3px;
+            }
+
+            .social-link span {
+                font-size: 13px;
+                color: #7f8c8d;
+            }
+
+        .about-content a {
+            word-break: break-all;
+            overflow-wrap: break-word;
         }
 
-        .social-link strong {
-            display: block;
-            color: #3498db;
-            margin-bottom: 3px;
-        }
-
-        .social-link span {
-            font-size: 13px;
-            color: #7f8c8d;
+        .about-content .highlight {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
     </style>
     <style>
@@ -239,6 +249,11 @@
         <div class="center-panel">
 
             <div class="about-content">
+
+                <div class="button-block">
+                    <button class="btn" onclick="window.location.href='/'">Home</button>
+                </div>
+
                 <div class="favicon-design">
                     <div class="favicon-design-cursor-container">
                         <div class="favicon-design-v-letter">V</div>
@@ -322,19 +337,19 @@
         <!-- Right Panel - Project Links -->
         <div class="right-panel">
             <div class="history-title">Project Links</div>
-			
-			<a href="https://github.com/adriancs2/VelocityKeys" target="_blank" class="social-link">
+
+            <a href="https://github.com/adriancs2/VelocityKeys" target="_blank" class="social-link">
                 <strong>GitHub Repository</strong>
                 <span>Source Code & Documentation</span>
             </a>
-			
-			<a href="https://github.com/adriancs2/VelocityKeys/blob/main/LICENSE" target="_blank" class="social-link">
+
+            <a href="https://github.com/adriancs2/VelocityKeys/blob/main/LICENSE" target="_blank" class="social-link">
                 <strong>License Info</strong>
-				<span>The Unlicense (Public Domain)</span>
+                <span>The Unlicense (Public Domain)</span>
             </a>
-			
-			<div class="history-title">Connect</div>
-            
+
+            <div class="history-title">Connect</div>
+
             <a href="https://adriancs.com" target="_blank" class="social-link">
                 <strong>Personal Blog</strong>
                 <span>adriancs.com</span>
