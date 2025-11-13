@@ -47,7 +47,7 @@
     <!-- Program Header -->
     <div class="program-header">
         <h1 class="program-title">Velocity Keys</h1>
-        <p class="program-subtitle">Master Code Typing. Test Your Speed & Accuracy.</p>
+        <p class="program-subtitle">Master Code Typing. Test Your Code Typing Speed & Accuracy.</p>
     </div>
 
     <div class="container">
