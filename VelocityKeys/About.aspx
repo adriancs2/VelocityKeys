@@ -144,6 +144,34 @@
         .right-panel-content {
             padding: 0;
         }
+		
+		.social-link {
+            display: block;
+            padding: 12px 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 8px;
+            color: #2c3e50;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-link:hover {
+            transform: translateX(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .social-link strong {
+            display: block;
+            color: #3498db;
+            margin-bottom: 3px;
+        }
+
+        .social-link span {
+            font-size: 13px;
+            color: #7f8c8d;
+        }
     </style>
     <style>
         .favicon-design {
@@ -195,7 +223,7 @@
     <!-- Program Header -->
     <div class="program-header">
         <h1 class="program-title">Velocity Keys</h1>
-        <p class="program-subtitle">Master Code Typing. Test Your Speed & Accuracy.</p>
+        <p class="program-subtitle">Master Code Typing. Test Your Code Typing Speed & Accuracy.</p>
     </div>
 
     <div class="container">
@@ -262,13 +290,13 @@
                     <li><code>/sample_text/text1.txt</code></li>
                     <li><code>/sample_text/sample.txt</code></li>
                     <li><code>/sample_text/code.txt</code></li>
-                    <li><code>/sample_text/javascript-example.js</code></li>
-                    <li><code>/sample_text/python-functions.py</code></li>
+                    <li><code>/sample_text/javascript-example.txt</code></li>
+                    <li><code>/sample_text/python-functions.txt</code></li>
                 </ul>
 
                 <h3>Step 3: Create the Filenames List</h3>
                 <p>Create a file named <code>filenames.txt</code> in the <code>/sample_text</code> folder and list all your text files separated by commas:</p>
-                <pre>text1.txt,sample.txt,code.txt,javascript-example.js,python-functions.py</pre>
+                <pre>text1.txt,sample.txt,code.txt,javascript-example.txt,python-functions.txt</pre>
 
                 <p><strong>Important:</strong> The filenames should match exactly as they appear in the folder.</p>
 
@@ -292,27 +320,43 @@
         <!-- Right Panel - Project Links -->
         <div class="right-panel">
             <div class="history-title">Project Links</div>
-            <div class="right-panel-content">
-                <a href="https://github.com/adriancs2/VelocityKeys" target="_blank" class="project-link">
-                    <strong>GitHub Repository</strong>
-                    <span>Source Code & Documentation</span>
-                </a>
+			
+			<a href="https://github.com/adriancs2/VelocityKeys" target="_blank" class="social-link">
+                <strong>GitHub Repository</strong>
+                <span>Source Code & Documentation</span>
+            </a>
+			
+			<a href="https://github.com/adriancs2/VelocityKeys/blob/main/LICENSE" target="_blank" class="social-link">
+                <strong>License Info</strong>
+				<span>The Unlicense (Public Domain)</span>
+            </a>
+			
+			<div class="history-title">Connect</div>
+            
+            <a href="https://adriancs.com" target="_blank" class="social-link">
+                <strong>Personal Blog</strong>
+                <span>adriancs.com</span>
+            </a>
 
-                <a href="https://github.com/adriancs2/VelocityKeys/issues" target="_blank" class="project-link">
-                    <strong>Report Issues</strong>
-                    <span>Bug Reports & Feature Requests</span>
-                </a>
+            <a href="https://www.youtube.com/@adriancs2025" target="_blank" class="social-link">
+                <strong>YouTube Channel</strong>
+                <span>@adriancs2025</span>
+            </a>
 
-                <a href="https://github.com/adriancs2/VelocityKeys/fork" target="_blank" class="project-link">
-                    <strong>Fork Project</strong>
-                    <span>Create Your Own Version</span>
-                </a>
+            <a href="https://www.facebook.com/adriancs2.22" target="_blank" class="social-link">
+                <strong>Facebook</strong>
+                <span>adriancs2.22</span>
+            </a>
 
-                <a href="https://github.com/adriancs2/VelocityKeys/blob/main/LICENSE" target="_blank" class="project-link">
-                    <strong>License Info</strong>
-                    <span>The Unlicense (Public Domain)</span>
-                </a>
-            </div>
+            <a href="https://x.com/adriancs2025" target="_blank" class="social-link">
+                <strong>X (Twitter)</strong>
+                <span>@adriancs2025</span>
+            </a>
+
+            <a href="https://github.com/adriancs2" target="_blank" class="social-link">
+                <strong>GitHub</strong>
+                <span>adriancs2 (adriancs)</span>
+            </a>
         </div>
     </div>
 

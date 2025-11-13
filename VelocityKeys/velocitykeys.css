@@ -19,7 +19,7 @@ body {
 .program-header {
     padding: 10px 20px;
     margin-bottom: 10px;
-    animation: fadeInDown 0.8s ease;
+    /*animation: fadeInDown 0.8s ease;*/
     border-radius: 10px;
     background: #382F73;
     width: 100%;
