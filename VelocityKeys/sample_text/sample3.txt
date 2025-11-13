@@ -1,99 +1,82 @@
-﻿const total = items.reduce((sum, x) => sum += x, 0);
-<div className="box">{users.map(u => <span>{u.name}</span>)}</div>
-var result = data.Where(x => x > 0).Select(x => x * 2).ToList();
-.grid { display: flex; gap: 20px; align-items: center; }
-for(auto& item : vec) { total += item.value * 2; }
-count=$((count + 1)); arr+=("item${count}");
-list.stream().filter(x -> x != null).forEach(x -> sum += x);
-let mut counter = 0; vec.iter().for_each(|x| counter += x);
-data = {k: v+1 for k, v in items.items() if v > 0}
-SELECT SUM(amount) FROM orders WHERE status IN ('paid', 'shipped');
-$total += array_reduce($arr, fn($c, $i) => $c + $i, 0);
-promise.then(res => res.json()).catch(err => console.error(err));
-<form onSubmit={(e) => { e.preventDefault(); handleSubmit(); }}>
-users?.FirstOrDefault(u => u.Age >= 18 && u.Active == true);
-@keyframes slide { from { transform: translateX(-100%); } }
-std::transform(v.begin(), v.end(), [](int x) { return x *= 2; });
-while [ $count -lt 10 ]; do ((sum += count)); ((count++)); done
-Map<String, Integer> map = new HashMap<>() {{ put("a", 1); }};
-match result { Ok(val) => total += val, Err(_) => total += 0 }
-nums += [x**2 for x in range(10) if x % 2 == 0]
-UPDATE products SET price = price * 1.1 WHERE category = 'tech';
-foreach($data as $k => $v) { $result[$k] = $v * 2; }
-const {id, name, ...rest} = obj; const merged = {...a, ...b};
-<button disabled={loading} onClick={() => setCount(c => c + 1)}>
-await using var stream = File.OpenRead(path);
-.box::before { content: ""; position: absolute; opacity: 0.5; }
-queue.push({priority: high, data: item});
-find . -name "*.log" -exec grep "error" {} \; | wc -l
-BiFunction<Integer, Integer, Integer> add = (a, b) -> a + b;
-vec.iter().filter(|&&x| x > 5).map(|&x| x * 2).collect()
-with open('file.txt') as f: lines = [l.strip() for l in f]
-INSERT INTO logs (user_id, action) VALUES (?, ?) ON DUPLICATE KEY;
-$arr = array_map(fn($x) => $x * 2, array_filter($data));
-state => ({...state, count: state.count + 1, active: true});
-<input type="email" value={email} onChange={e => setEmail(e)} />
-list.Where(x => x?.Value != null).Sum(x => x.Value ?? 0);
-border: 1px solid #ddd; box-shadow: 0 2px 4px rgba(0,0,0,.1);
-std::accumulate(nums.begin(), nums.end(), 0, [](int a, int b){});
-arr=($(ls *.txt)); for f in "${arr[@]}"; do echo "$f"; done
-Optional.ofNullable(user).map(User::getName).orElse("Unknown");
-let result: Vec<_> = (0..10).filter(|&x| x % 2 == 0).collect();
-dict = {**defaults, **config}; total += sum(dict.values())
-SELECT u.*, COUNT(o.id) FROM users u LEFT JOIN orders o ON u.id;
-class DB { public function query($sql, $params = []) { } }
-arr.filter(x => x > 0).map(x => ({id: x, value: x * 2}))
-<table><tr><td>{data?.value || 'N/A'}</td></tr></table>
-record Person(string Name, int Age, string Email = "");
-#app { display: grid; grid-template-columns: repeat(3, 1fr); }
-template<typename T> T clamp(T val, T min, T max) { return val; }
-sed -i 's/\([0-9]*\)/[\1]/g' file.txt && chmod +x script.sh
-items.parallelStream().filter(i -> i.isValid()).collect(toList());
-impl Iterator for Counter { fn next(&mut self) -> Option<i32> {} }
-result = [func(x) for x in data if predicate(x)]
-WITH cte AS (SELECT * FROM t WHERE id > 0) SELECT * FROM cte;
-trait Logger { public function log($msg) { file_put_contents(); } }
-const pipeline = compose(filter(x => x > 0), map(x => x * 2));
-<Component {...props} render={() => <Child data={state} />} />
-async Task<Result> ProcessAsync() => await _service.GetDataAsync();
-.container > * { flex: 1; margin: 0 10px; padding: 20px; }
-auto lambda = [&total](auto x) { total += x; return x * x; };
-test -f "$file" && cat "$file" | grep -E "^[A-Z]" > output.txt
-Function<List<Integer>, Integer> sum = l -> l.stream().reduce(0, +);
-pub fn process(data: &[i32]) -> impl Iterator<Item = i32> + '_ {}
-@dataclass class User: name: str; age: int = 0; active: bool = True
-CREATE PROCEDURE calc(IN x INT) BEGIN SET @result = x * 2; END;
-$result = array_reduce($arr, fn($c, $i) => $c + $i['value'], 0);
-users.find(u => u.id === id)?.orders?.reduce((s, o) => s += o, 0);
-<section className={active ? 'show' : 'hide'}>Content</section>
-var grouped = items.GroupBy(x => x.Category).Select(g => new {});
-transition: all 0.3s ease; transform: scale(1.05) rotate(5deg);
-std::vector<std::pair<int, string>> pairs = {{1, "a"}, {2, "b"}};
-awk '{total += $2} END {print "Sum:", total}' data.txt
-Map<String, List<Integer>> map = stream.collect(groupingBy(x::key));
-enum Status { Active, Inactive } impl Default for Status {}
-lambda x: x**2 if x > 0 else 0
-SELECT DISTINCT category, AVG(price) OVER (PARTITION BY category);
-namespace App\Http { class Controller { protected $auth; } }
-export const reducer = (state = initial, {type, payload}) => ({});
-<ul>{items?.map((item, i) => <li key={i}>{item.name}</li>) || []}</ul>
-Dictionary<string, Func<int, int>> ops = new() { ["inc"] = x => x+1 };
-.btn:hover { background: linear-gradient(135deg, #667eea, #764ba2); }
-using UniquePtrInt = std::unique_ptr<int>; auto ptr = make_unique();
-declare -A config=([host]="localhost" [port]="8080");
-@Override public boolean equals(Object o) { return true; }
-let items: Vec<i32> = vec![1,2,3]; items.retain(|&x| x % 2 == 0);
-result = {k: process(v) for k, v in data.items() if validate(k)}
-DELETE FROM cache WHERE created_at < DATE_SUB(NOW(), INTERVAL 1 DAY);
-protected function validate(array $data): bool { return true; }
-async function* generator() { for (let i of arr) yield i; }
-<Router><Route path="/users/:id" element={<User />} /></Router>
-await foreach (var item in stream) { total += await Process(item); }
-@media (max-width: 768px) { .sidebar { display: none; } }
-constexpr int factorial(int n) { return n <= 1 ? 1 : n * fact(n-1); }
-ps aux | grep "node" | awk '{print $2}' | xargs kill -9
-BiPredicate<String, Integer> valid = (s, i) -> s.length() > i;
-fn main() { let x = Box::new(5); println!("{}", *x + 10); }
-class Model: def save(self): self.updated_at = datetime.now()
-ALTER TABLE users ADD COLUMN status ENUM('active', 'inactive');
-final class Cache { private static $inst; public static $data; }
+﻿the cat sat on the mat and looked at the dog in the yard
+it was a hot day so we went to the park for a walk
+she can run fast and jump high over the old fence
+he has a new car and drives it to work every day
+they will go to the store later to buy some food
+we like to read books and watch movies at home
+this is my hat and that is your bag on the chair
+come here and sit down with us for a cup of tea
+the sun sets in the west and rises in the east each day
+all of them want to play games outside after school
+i see you over there by the tree near the river
+she told me to wait here while she gets the keys
+the bird flew up into the sky and sang a song
+you can take this one or that one from the box
+he said he will be back soon to help with the work
+they need more time to finish all of their tasks
+we should go now before it gets too dark outside
+the old man sat by the fire and read his book
+she gave him a gift for his big day last week
+it seems like a good plan so lets try it out now
+the water in the lake was cold but clear and blue
+come back when you are done with your own work
+i know where they live but i forgot the street name
+she has many friends who visit her all the time
+the moon shines bright at night when the stars come out
+we saw a fox run across the road near the woods
+he wants to learn how to cook and bake good food
+they like to swim in the pool during hot summer days
+the house has three rooms and a yard full of trees
+you must try hard to reach your goals in life each day
+i think we can do better if we work as a team
+quickly realize practice achieve between picture complete
+decide against explain require present forward mountain
+beautiful different together instead language question
+possible through measure another thousand remember
+structure building position general sentenceaughter
+machine separate continue thought beginning pressure
+perhaps natural consider somebody although business
+several million produce certain distance exercise
+surface imagine material evidence necessary government
+special standard probably straight daughter husband
+strength describe village compare advantage breakfast
+difficult important approach opposite creative knowledge
+industry carefully maintain shoulder elephant neighbor
+movement physical decision keyboard absolute pleasure
+electric personal delivered chocolate afternoon celebrate
+ordinary magazine wonderful education furniture grandfather
+treasure influence recognize dangerous direction photograph
+authority understand confident adventure appreciate
+foundation geography incredible successful atmosphere
+community scientific particular definition situation
+temperature mysterious environment completely professional
+curiosity especially challenge excellent guarantee
+experience technique recommend collection additional
+instrument occupation volunteer restaurant university
+development revolution organization comfortable responsible
+absolutely magnificent parliament spectacular considerable
+quizzical extraordinary archaeological conscientious
+kaleidoscope juxtaposition mischievous onomatopoeia
+pharmaceutical acquaintance haphazardly unnecessarily
+enthusiastically pronunciation approximately simultaneous
+accomplishment questionnaire entrepreneurial unquestionably
+quintessential acknowledgement Mediterranean exaggeration
+conscientiously bureaucratically simultaneously miscellaneous
+disproportionately subconsciously unequivocally acknowledgment
+pharmaceutical extraordinary characteristics serendipitous
+juxtaposition kaleidoscope miscellaneous conscientiously
+quintessential simultaneously accomplishment unnecessarily
+archaeological entrepreneurial mischievously unquestionably
+pharmaceutical Mediterranean approximately extraordinary
+kaleidoscope characteristic disproportionate subconscious
+simultaneous accomplishment entrepreneurial acknowledgement
+unnecessarily questionnaire conscientious pharmaceutical
+archaeological juxtaposition extraordinarily quintessential
+Mediterranean onomatopoeia characteristic simultaneously
+conscientiously mischievous unquestionably accomplishment
+entrepreneurial unnecessarily pharmaceutical extraordinary
+kaleidoscopic simultaneous disproportionate subconsciously
+questionnaire acknowledgement Mediterranean archaeological
+quintessential conscientiously extraordinary characteristics
+pharmaceutical unnecessarily entrepreneurial simultaneously
+juxtaposition accomplishment miscellaneous unquestionably
