@@ -438,8 +438,17 @@ function handleTyping(event) {
         document.getElementById('typingInput').placeholder = '';
     }
 
-    const input = event.target.value;
+    let input = event.target.value;
     const currentLine = codeLines[currentLineIndex] || '';
+
+    // Prevent whitespace at the beginning of a new/blank line
+    if (input.length > 0 && currentCharIndex === 0 && input[0] === ' ') {
+        // Remove leading whitespace
+        input = input.trimStart();
+        event.target.value = input;
+        // If entire input was whitespace, return early
+        if (input.length === 0) return;
+    }
 
     // Update character highlights
     const activeLineElement = document.querySelector('.code-line.active');
