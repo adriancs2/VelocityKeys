@@ -277,13 +277,15 @@
                     <li>Clean, modern interface</li>
                 </ul>
 
-                <h2>How to Prepare Default Sample Texts</h2>
+                <h2>How to Deploy Your Own Version and Prepare Default Sample Texts</h2>
                 <p>Follow these steps to add your own default sample texts to the application:</p>
 
-                <h3>Step 1: Create the Sample Text Folder</h3>
+                <h3>Step 1: Download the source code and rename <code>Default.aspx</code> to <code>index.html</code>.</h3>
+
+                <h3>Step 2: Create the Sample Text Folder</h3>
                 <p>Create a folder named <code>/sample_text</code> in your web application's root directory.</p>
 
-                <h3>Step 2: Add Your Text Files</h3>
+                <h3>Step 3: Add Your Text Files</h3>
                 <p>Upload your sample text files to this folder. You can use any plain text format (.txt, .js, .py, .java, .cpp, .html, .css, etc.)</p>
                 <p><strong>Examples:</strong></p>
                 <ul>
@@ -294,14 +296,14 @@
                     <li><code>/sample_text/python-functions.txt</code></li>
                 </ul>
 
-                <h3>Step 3: Create the Filenames List</h3>
+                <h3>Step 4: Create the Filenames List</h3>
                 <p>Create a file named <code>filenames.txt</code> in the <code>/sample_text</code> folder and list all your text files separated by commas:</p>
                 <pre>text1.txt,sample.txt,code.txt,javascript-example.txt,python-functions.txt</pre>
 
                 <p><strong>Important:</strong> The filenames should match exactly as they appear in the folder.</p>
 
-                <h3>Step 4: Test Your Setup</h3>
-                <p>Reload the application. The default text buttons should now appear in the left panel, allowing users to select from your custom sample texts.</p>
+                <h3>Step 5: Test Your Setup</h3>
+                <p>Start your web server, load the application. The default text buttons should now appear in the left panel, allowing users to select from your custom sample texts.</p>
 
                 <h2>Technology Stack</h2>
                 <ul>
