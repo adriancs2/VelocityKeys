@@ -348,6 +348,12 @@
                 <span>The Unlicense (Public Domain)</span>
             </a>
 
+            <a href="https://vibe-hall.vercel.app/app/cmhz1v2yu000bjo04kca2swsk" target="_blank" class="social-link">
+                <strong>Vibe Hall</strong>
+                <span>Vibe Hall | Velocity Keys</span>
+            </a>
+            
+
             <div class="history-title">Connect</div>
 
             <a href="https://adriancs.com" target="_blank" class="social-link">
