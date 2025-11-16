@@ -1,0 +1,208 @@
+﻿const arr = items?.filter(x => x.active)?.map(y => y * 2) || [];
+def process(data: List[int]) -> Dict[str, Any]: return {**opts}
+SELECT * FROM users WHERE age >= 18 AND status != 'inactive';
+<div className="container">{items.map(i => <span>{i}</span>)}</div>
+std::vector<int> nums = {1, 2, 3}; auto sum = std::accumulate();
+@interface User : NSObject @property (nonatomic) NSString *name;
+$result = array_map(fn($x) => $x * 2, array_filter($data));
+public class Main { private final Map<String, Integer> cache; }
+#app { display: grid; grid-template: repeat(3, 1fr); }
+arr=($(ls *.txt)); for f in "${arr[@]}"; do echo "$f"; done
+let mut vec: Vec<i32> = vec![1, 2, 3]; vec.retain(|&x| x > 0);
+(defn factorial [n] (if (<= n 1) 1 (* n (factorial (- n 1)))))
+var result = items.Where(x => x?.Value != null).Sum(x => x.Value);
+nums = [x**2 for x in range(10) if x % 2 == 0]
+WITH cte AS (SELECT * FROM t WHERE id > 0) SELECT COUNT(*) FROM cte;
+<template v-if="show"><div :class="active ? 'on' : 'off'"></div>
+#include <iostream> template<typename T> T max(T a, T b) {}
+[[[NSArray alloc] initWithObjects:@"a", @"b", nil] count];
+<?php foreach($items as $k => $v): echo $v['name']; endforeach; ?>
+interface Config { url?: string; timeout?: number; retry?: boolean; }
+.btn:hover { transform: scale(1.05); box-shadow: 0 4px 8px rgba(); }
+find . -name "*.log" -exec grep -E "^ERROR" {} \; | wc -l
+fn process(data: &[i32]) -> impl Iterator<Item = i32> + '_ {}
+(let ((sum 0)) (dolist (x '(1 2 3)) (setq sum (+ sum x))))
+async Task<Result> ProcessAsync() => await _service.GetDataAsync();
+@dataclass class User: name: str; age: int = 0; active: bool = True
+CREATE PROCEDURE calc(IN x INT) BEGIN SET @result = x * 2; END;
+<button @click="count++" :disabled="loading">{{ count }}</button>
+auto lambda = [&total](auto x) { total += x; return x * 2; };
+@objc func handleTap(_ sender: UITapGestureRecognizer) { }
+$sql = "SELECT * FROM users WHERE id = :id"; $stmt->execute([':id']);
+Optional.ofNullable(user).map(User::getName).orElse("Unknown");
+::before { content: "→"; position: absolute; left: -20px; }
+awk '{total += $2} END {print "Sum:", total}' data.txt
+pub enum Status { Active, Inactive } impl Default for Status {}
+(define-macro (when test . body) `(if ,test (begin ,@body)))
+record Person(string Name, int Age) : IComparable<Person>;
+lambda x: x**2 if x > 0 else 0
+ALTER TABLE users ADD INDEX idx_email (email(255));
+<ng-container *ngIf="items$ | async as items">{{ items.length }}
+std::transform(v.begin(), v.end(), [](int n) { return n * 2; });
+if [[ -f "$file" ]]; then cat "$file" | grep -v "^#"; fi
+let result: Result<i32, Error> = Ok(42); match result { Ok(v) => v }
+(map (lambda (x) (* x x)) (filter even? (range 1 10)))
+await foreach (var item in stream) { total += item?.Value ?? 0; }
+dict = {k: v for k, v in items.items() if v > threshold}
+DELETE FROM cache WHERE created_at < NOW() - INTERVAL '1 day';
+<slot name="header" :data="props">{{ defaultContent }}</slot>
+#define MAX(a,b) ((a) > (b) ? (a) : (b))
+[[NSNotificationCenter defaultCenter] postNotificationName:@"Update"];
+trait Logger { public function log($msg): void { echo $msg; } }
+type Config = { url: string; method?: 'GET' | 'POST'; data?: any; };
+@media (max-width: 768px) { .container { flex-direction: column; } }
+ps aux | grep "node" | awk '{print $2}' | xargs kill -9
+impl<T> Iterator for Counter<T> { fn next(&mut self) -> Option<T> {}
+(cond ((> x 0) 'positive) ((< x 0) 'negative) (t 'zero))
+var grouped = items.GroupBy(x => x.Category).Select(g => new {});
+class Meta: ordering = ['-created_at']; verbose_name = 'User'
+INSERT INTO logs VALUES (?, ?) ON CONFLICT (id) DO UPDATE SET;
+<transition name="fade"><div v-show="visible">Content</div>
+constexpr int factorial(int n) { return n <= 1 ? 1 : n * fact(n-1); }
+dispatch_async(dispatch_get_main_queue(), ^{ [self update]; });
+$users = User::where('active', true)->orderBy('name')->paginate(10);
+Stream.of(1, 2, 3).filter(x -> x > 1).map(x -> x * 2).collect();
+border-radius: 8px; backdrop-filter: blur(10px); opacity: 0.9;
+declare -A config=([host]="localhost" [port]="8080");
+fn main() -> io::Result<()> { let file = File::open("data.txt")?; }
+(reduce + (map #(* % %) (filter even? (range 10))))
+public static T Clamp<T>(T val, T min, T max) where T : IComparable
+@app.route('/api/<int:id>') def get_user(id): return jsonify({})
+UPDATE products SET price = price * 1.1 WHERE category IN ('tech');
+<portal to="modal"><div class="overlay">{{ message }}</div></portal>
+inline auto compute(auto x) -> decltype(x * x) { return x * x; }
+@synchronized(self) { self.counter++; return self.counter; }
+namespace App\Http { class Controller { protected $service; } }
+export const reducer = (state = {}, {type, payload}) => ({ ...state });
+::selection { background: #667eea; color: white; }
+test -d "$dir" && cd "$dir" || mkdir -p "$dir"
+#[derive(Debug, Clone)] struct Point { x: f64, y: f64 }
+(loop for i from 1 to 10 collect (* i i))
+async IAsyncEnumerable<int> GenerateAsync() { yield return 1; }
+result = sum(x**2 for x in data if x > 0)
+CREATE INDEX CONCURRENTLY idx_created ON posts(created_at DESC);
+<keep-alive :include="['Home', 'About']"><router-view /></keep-alive>
+using UniquePtrInt = std::unique_ptr<int>; auto ptr = make_unique();
+performSelector:@selector(update) withObject:nil afterDelay:0.1];
+Route::middleware(['auth'])->group(function () { Route::get('/'); });
+BiFunction<Integer, Integer, Integer> add = (a, b) -> a + b;
+calc(100% - 20px); clamp(10px, 50%, 100px); min(100vh, 800px);
+sed -i 's/\([0-9]*\)/[\1]/g' file.txt && chmod +x script.sh
+Box::pin(async move { stream.next().await })
+(defmacro unless (test &rest body) `(when (not ,test) ,@body))
+[Authorize] public ActionResult<T> Get() => Ok(_service.GetAll());
+with open('data.json', 'r') as f: data = json.load(f)
+SELECT json_agg(t) FROM (SELECT * FROM users WHERE active) t;
+<component :is="currentView" v-bind="$attrs" v-on="$listeners" />
+std::array<int, 5> arr = {1, 2, 3, 4, 5}; auto [a, b, c, d, e] = arr;
+NSPredicate *pred = [NSPredicate predicateWithFormat:@"age > %d", 18];
+<?= htmlspecialchars($user->name ?? 'Guest') ?>
+type Result<T> = { success: true; data: T } | { success: false };
+grid-template-areas: "header header" "sidebar main" "footer footer";
+source ~/.bashrc && export PATH=$PATH:/usr/local/bin
+macro_rules! vec { ($($x:expr),*) => { vec![$($x),*] }; }
+(progn (setq x 10) (setq y 20) (+ x y))
+decimal? price = product?.Price ?? 0.00m;
+@property (nonatomic, copy) void (^completion)(BOOL success);
+$collection->filter(fn($item) => $item->active)->map(fn($x) => $x * 2);
+class User implements Serializable { private static final long serialVersionUID = 1L; }
+:root { --primary: #667eea; --secondary: #764ba2; }
+array=("apple" "banana" "cherry"); echo "${array[@]}"
+async fn fetch_data(url: &str) -> Result<String, reqwest::Error> {}
+(assoc (dissoc m :old-key) :new-key value)
+public IActionResult Post([FromBody] UserDto dto) => Created();
+if __name__ == "__main__": asyncio.run(main())
+GRANT SELECT, INSERT ON schema.* TO 'user'@'localhost';
+<suspense><template #default><AsyncComponent /></template></suspense>
+template<> struct hash<Key> { size_t operator()(const Key& k) {}};
+UIView.animate(withDuration: 0.3) { self.view.alpha = 0 }
+function fn(...$args) { return array_reduce($args, fn($a, $b) => $a + $b); }
+@FunctionalInterface interface Processor { void process(String s); }
+filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1)); will-change: transform;
+#!/usr/bin/env bash set -euo pipefail
+use std::sync::{Arc, Mutex}; let data = Arc::new(Mutex::new(vec![]));
+(destructuring-bind (a b &rest rest) '(1 2 3 4) (list a b rest))
+internal sealed class Service<T> where T : class, new() {}
+@pytest.fixture def client(): yield app.test_client()
+CREATE OR REPLACE FUNCTION calc() RETURNS TRIGGER AS $$ BEGIN END $$;
+<teleport to="body"><div class="modal">{{ content }}</div></teleport>
+decltype(auto) forward(T&& t) { return static_cast<T&&>(t); }
+@IBOutlet weak var label: UILabel! @IBAction func tap(_ sender: Any)
+DB::transaction(function () { DB::table('users')->insert($data); });
+Predicate<String> isEmpty = String::isEmpty; isEmpty.negate();
+backdrop-filter: blur(10px) saturate(180%); -webkit-backdrop-filter:
+if [[ "$1" =~ ^[0-9]+$ ]]; then echo "Number"; fi
+#[tokio::main] async fn main() { tokio::spawn(async { }).await; }
+(when-let [result (some-fn input)] (process result))
+public T GetService<T>() where T : class => _provider.GetService<T>();
+@lru_cache(maxsize=128) def fibonacci(n): return n if n < 2 else
+COPY (SELECT * FROM users) TO '/tmp/users.csv' WITH CSV HEADER;
+<input v-model.lazy.trim="email" @blur="validate" type="email" />
+std::shared_ptr<Widget> widget = std::make_shared<Widget>();
+CFRunLoopPerformBlock(CFRunLoopGetMain(), kCFRunLoopCommonModes, ^{});
+Cache::remember('key', 3600, fn() => DB::table('users')->get());
+CompletableFuture.supplyAsync(() -> compute()).thenApply(x -> x * 2);
+transform: translateZ(0) rotate3d(1, 1, 0, 45deg); perspective: 1000px;
+local -r readonly_var="constant" || return 1
+tokio::select! { _ = &mut delay => {}, result = &mut future => {} }
+(-> data (filter even?) (map #(* % %)) (reduce +))
+[MethodImpl(MethodImplOptions.AggressiveInlining)] int Fast() {}
+@mock.patch('module.function') def test(self, mock_fn): pass
+ALTER TABLE ADD CONSTRAINT fk_user FOREIGN KEY (user_id) REFERENCES;
+<transition-group name="list" tag="ul"><li v-for="item in items">
+typename std::enable_if<std::is_integral<T>::value, T>::type
+@available(iOS 14.0, *) func newMethod() { #if canImport(SwiftUI) }
+Eloquent::when($condition, fn($q) => $q->where('active', true));
+@Override public int compareTo(T other) { return this.id - other.id; }
+@counter-style custom { system: cyclic; symbols: "▶" "▷" "►" "▻"; }
+compgen -W "start stop restart" -- "$cur"
+let handle: JoinHandle<Result<_, _>> = thread::spawn(move || {});
+(with-slots (x y z) object (setf x 10 y 20 z (+ x y)))
+public required init?(coder: NSCoder) { super.init(coder: coder) }
+@app.before_request def auth(): g.user = get_current_user()
+DO $$ DECLARE r record; BEGIN FOR r IN SELECT * FROM t LOOP END LOOP;
+<transition enter-class="opacity-0" leave-to-class="opacity-0">
+std::variant<int, float, std::string> var = "hello";
+objc_setAssociatedObject(self, &key, value, OBJC_ASSOCIATION_RETAIN);
+collect(['a' => 1])->mapWithKeys(fn($v, $k) => [$k.'_key' => $v * 2]);
+synchronized(lock) { while(!condition) { lock.wait(); } }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+trap 'echo "Error on line $LINENO"' ERR
+Arc::new(RefCell::new(HashMap::new())); Rc::weak_count(&rc);
+(eval-when (:compile-toplevel :load-toplevel) (defun helper () nil))
+Task.Run(async () => await ProcessAsync()).ConfigureAwait(false);
+def __enter__(self): return self def __exit__(self, *args): pass
+EXPLAIN ANALYZE SELECT * FROM large_table WHERE indexed_col = ?;
+<render-function :h="h" :props="props" :slots="slots" />
+if constexpr (std::is_same_v<T, int>) { return process_int(val); }
+weak var delegate: ProtocolName? { didSet { setupDelegate() } }
+Gate::define('edit-post', fn($user, $post) => $user->id === $post->id);
+Collectors.groupingBy(User::getAge, Collectors.counting());
+:is(.card, .panel):hover { transform: translateY(-2px); }
+[[ -z "$var" ]] && var="default" || echo "var is set"
+unsafe { ptr::write_volatile(&mut STATIC_MUT, value); }
+(->> (range 100) (filter prime?) (take 10) (into []))
+ValueTask<T> GetAsync<T>(string key) where T : struct => default;
+@contextmanager def timing(): start = time(); yield; print(time() - start)
+json_build_object('id', id, 'data', json_agg(items));
+<router-link :to="{ name: 'user', params: { id: user.id } }">
+std::optional<T> find(const K& key) { return std::nullopt; }
+let queue = DispatchQueue(label: "com.app.queue", qos: .background)
+@include('partials.header', ['title' => $title ?? 'Default'])
+enum Result<T, E> { Ok(T), Err(E) } use Result::{Ok, Err};
+scroll-behavior: smooth; overscroll-behavior-y: contain;
+complete -F _custom_completion command_name
+Pin<Box<dyn Future<Output = Result<(), Error>> + Send + 'static>>
+(quote (lambda (x) (if (> x 0) (* x x) 0)))
+Span<int> span = stackalloc int[100]; ref int first = ref span[0];
+@app.errorhandler(404) def not_found(e): return jsonify(error=str(e))
+MERGE INTO target USING source ON (target.id = source.id) WHEN MATCHED;
+<style scoped>::v-deep .child { color: red; }</style>
+[[nodiscard]] constexpr auto calc(auto x) noexcept -> decltype(auto)
+NotificationCenter.default.post(name: .init("Update"), object: nil)
+validator(fn($attr, $val, $fail) => strlen($val) > 10 ?: $fail('Too short'));
+Supplier<LocalDateTime> now = LocalDateTime::now;
+text-decoration: underline wavy #667eea; text-underline-offset: 3px;
+eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa
+impl From<String> for Error { fn from(s: String) -> Self { Error(s) } }
+`(let* ((x 10) (y (* x 2))) (+ x y))
