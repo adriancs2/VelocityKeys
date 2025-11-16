@@ -30,7 +30,7 @@ auto lambda = [&total](auto x) { total += x; return x * 2; };
 @objc func handleTap(_ sender: UITapGestureRecognizer) { }
 $sql = "SELECT * FROM users WHERE id = :id"; $stmt->execute([':id']);
 Optional.ofNullable(user).map(User::getName).orElse("Unknown");
-::before { content: "→"; position: absolute; left: -20px; }
+::before { content: "->"; position: absolute; left: -20px; }
 awk '{total += $2} END {print "Sum:", total}' data.txt
 pub enum Status { Active, Inactive } impl Default for Status {}
 (define-macro (when test . body) `(if ,test (begin ,@body)))
@@ -154,7 +154,7 @@ typename std::enable_if<std::is_integral<T>::value, T>::type
 @available(iOS 14.0, *) func newMethod() { #if canImport(SwiftUI) }
 Eloquent::when($condition, fn($q) => $q->where('active', true));
 @Override public int compareTo(T other) { return this.id - other.id; }
-@counter-style custom { system: cyclic; symbols: "▶" "▷" "►" "▻"; }
+@counter-style custom { system: cyclic; symbols: ">" ">>" "<" "<<"; }
 compgen -W "start stop restart" -- "$cur"
 let handle: JoinHandle<Result<_, _>> = thread::spawn(move || {});
 (with-slots (x y z) object (setf x 10 y 20 z (+ x y)))
