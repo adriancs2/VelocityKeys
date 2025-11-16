@@ -90,8 +90,8 @@
     <Content Include="favicon\ms-icon-70x70.png" />
     <Content Include="favicon\thumbnail.png" />
     <Content Include="Global.asax" />
-    <Content Include="sample_text\sample2.txt" />
-    <Content Include="sample_text\sample1.txt" />
+    <Content Include="sample_text\sample_code2.txt" />
+    <Content Include="sample_text\sample_code1.txt" />
     <Content Include="sample_text\filenames.txt" />
     <Content Include="sample_text\sample3.txt" />
     <Content Include="velocitykeys2.css" />
