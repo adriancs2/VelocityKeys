@@ -87,7 +87,7 @@
             <div class="control-group">
                 <h3>History</h3>
                 <button class="btn restart" id="clearHistoryBtn">Clear History</button>
-                <button class="btn" onclick="window.location.href='/About.aspx'" style="background: #27ae60;">About</button>
+                <button class="btn" onclick="window.location.href='/About'" style="background: #27ae60;">About</button>
             </div>
 
         </div>
